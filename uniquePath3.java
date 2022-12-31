@@ -11,14 +11,14 @@ public class uniquePath3 {
         for (int i = 0; i < grid.length; i++) {
             for (int j = 0; j < grid[0].length; j++) {
                 if (grid[i][j]>=0){
-                    remain++;
+                    remain++;                      // total block we can visit
                     if (grid[i][j]==1){
                         src[0]=i;
                         src[1]=j;
                     }
                 }
                 else{
-                    visited[i][j]=true;
+                    visited[i][j]=true;  // not for visit or obstacle
                 }
 
             }
